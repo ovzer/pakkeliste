@@ -300,6 +300,14 @@ function populateSaved(state) {
 	}
 }
 
+$(document).on('change', '.activity', function(e) {
+    var val = e.target.value;
+    if (val != 0) {
+        $clone = $(this).closest(".activityRow").clone();
+        $("#activityRows").append($clone);
+    }
+});
+
 $(document).on('click', '.add', function() {
 	var num = $(this).parents().eq(1).attr('num');
 	if (num == "new") {

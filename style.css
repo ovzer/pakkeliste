@@ -1,6 +1,7 @@
 body {
 	font-family: 'Lato', sans-serif;
-	background: #eee;
+    background: url("background.jpg") no-repeat center center fixed; 
+    background-size: cover;
 	color:#3d4854;
 	font-size:16px;
 	padding: 0;
@@ -11,6 +12,12 @@ body {
 }
 #wrapper {
 	margin: 2em 5% 0 10%;
+}
+.activityRow > .numActivities {
+    width: 60px;
+}
+.activityRow > .activity {
+    width: calc(100% - 64px);
 }
 #lists {
 	max-width: 400px;
@@ -43,7 +50,7 @@ td:nth-child(1), #listetable td:nth-child(2) {
     display: none;
 }
 #variables {
-	width: 200px;
+	width: 300px;
 }
 .largeInputs {
 	font-family: 'Lato', sans-serif;
@@ -211,7 +218,7 @@ h4 {
     font-size: 1.4em;
 }
 #saved {
-	width: 200px;
+	width: 300px;
     clear: both;
     float: left;
 }

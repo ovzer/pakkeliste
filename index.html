@@ -57,10 +57,19 @@
 		<input type="text" id="fromDate" class="largeInputs textPointer" readonly="readonly">
 		<h3>Til</h3>
 		<input type="text" id="toDate" class="largeInputs textPointer" readonly="readonly">
-		<h3>Antall løp</h3>
-		<input type="number" id="nraces" class="largeInputs number" name="nraces" value="2">
-		<h3>Antall treninger</h3>
-		<input type="number" id="ntrainings" class="largeInputs number" name="ntrainings" value="5">
+		<h3>Aktiviteter</h3>
+		<div id="activityRows">
+			<div class="activityRow">
+				<select class="largeInputs select activity">
+					<option value=0></option>
+					<option value="orienteringslop">Orienteringsløp</option>
+					<option value="sprintolop">Sprint o-løp</option>
+					<option value="madrass">Løpetur</option>
+					<option value="flat">Fest</option>
+				</select>
+				<input type="number" class="largeInputs numActivities" value="1">
+			</div>
+		</div>
 		<input type="submit" value="Lag pakkeliste" class="largeInputs button">
 	</form>
 	<select id="saved" class="largeInputs select">
